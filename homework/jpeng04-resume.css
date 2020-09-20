@@ -1,0 +1,26 @@
+body {
+    font-family: 'Helvetica';
+}
+
+h2 {
+    font-size: 1em; 
+    margin-top: .5em;
+    margin-bottom: .25em;
+}
+
+ul {
+    list-style-type:square;
+}
+ul.no-bullet {
+    list-style-type:none;
+}
+ul.no-bullet li {
+    margin-left: 0;
+
+}
+ul.background-gradient {
+    background-image: linear-gradient(rgb(221, 164, 221), white);
+}
+h1.name-border {
+    border: 2px solid rgb(221, 164, 221);
+}
