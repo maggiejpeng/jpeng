@@ -1,0 +1,152 @@
+
+
+body {
+  font-family: monospace;
+  text-align: left;
+}
+
+.navbar{
+  margin-bottom: 1em;
+  width: 100%;
+  height: 110px;
+}
+nav {
+ position: relative;
+ width: calc(100% - 60px);
+ height: 6em;
+ margin: auto;
+ background: #000000;
+ z-index: 1;
+ text-align: right;
+ padding-right: 2%;
+}
+
+
+.logo {
+  width: 25%;
+  height: 120px; /* matching .logo height to that for the .navbar container auto; */
+  float: left;
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+  padding: 15px 25px 0px 25px;
+  /*adding bottom & left margin specifications to keep the div from outgrowing available space */
+}
+
+.menu-area li {
+  display: inline-block;
+  list-style-type: none;
+}
+.menu-area a {
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: block;
+  padding: 22px 25px;
+  font-size: 16px;
+  line-height: 35px;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;    
+}
+.menu-area a:hover {
+  background: rgb(165, 63, 165);
+  color: #fff;
+}
+/* you need the pseudoelements ::before and ::after not pseudo*classes* to add content for your nav decorations
+:before/:after will work, but it's best to use proper syntax to distingguish the two components */
+nav::before {
+  position: absolute;
+  content: '';
+  border-top: 10px solid #333;
+  border-right: 10px solid #333;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 100%;
+  left: 0;
+}
+
+nav::after {
+  position: absolute;
+  content: '';
+  border-top: 10px solid #333;
+  border-left: 10px solid #333;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 100%;
+  right: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 25%;
+  height: 120px; /* matching .logo height to that for the .navbar container auto; */
+  float: left;
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+  padding: 15px 25px 0px 25px;
+  /*adding bottom & left margin specifications to keep the div from outgrowing available space */
+}
+
+.menu-area li {
+  display: inline-block;
+  list-style-type: none;
+}
+.menu-area a {
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: block;
+  padding: 22px 25px;
+  font-size: 16px;
+  line-height: 35px;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;    
+}
+.menu-area a:hover {
+  background: rgb(165, 63, 165);
+  color: #fff;
+}
+/* you need the pseudoelements ::before and ::after not pseudo*classes* to add content for your nav decorations
+:before/:after will work, but it's best to use proper syntax to distingguish the two components */
+
+.container {
+  margin: 0 5em;}
+
+.page-container {
+      padding: 0 16px;}
+
+div.profile {
+float: left;
+margin-bottom: 2em;
+}
+
+p.sitename {
+font-weight: 600; font-family: monospace; font-size: 26px; margin: 0; padding: 0;
+}
+/* adding .row & .col flexbox classes, which you apply in html but don't style above or in internal CSS */
+.row {
+display: flex;
+}
+.col {
+flex: 1;
+}
+.col-2 {
+flex: 2;
+}
+
+/* you can add additional col-n classes if needed to get the layout you want */
+.col-3 {
+  flex: 3;
+  }
+.row img {
+width: 100%;
+}
+
+#top-panel {margin: 3em 3em 3em 3em;}
+#top-banner {background-color: blue; height:300px;}
+#banner-heading {background-color: violet; margin-left:2em; margin-top: 4em; width: 30%; padding: 0.5em; display: inline-block;}
